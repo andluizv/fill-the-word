@@ -1,6 +1,8 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 const speakBtn = document.getElementById("speakBtn");
+const wordInput = document.getElementById("wordInput");
+const brushColor = document.getElementById("brushColor");
 
 const fontSize = 200;
 let text = "A"; // valor inicial
@@ -143,5 +145,12 @@ if (SpeechRecognition) {
 	alert("Este navegador não suporta reconhecimento de voz.");
 }
 
+wordInput.addEventListener("keyup", (e)=> {
+    setText(e.target.value);
+})
+brushColor.addEventListener("change", (e) => {
+    console.log(e.target.value);
+    paintCtx.strokeStyle = e.target.value;
+})
 // Inicializa com a letra A
-setText("A");
+setText(text);
