@@ -1,0 +1,28 @@
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      background-color: #f0f8ff;
+      font-family: sans-serif;
+      padding-top: 30px;
+    }
+
+    canvas {
+      border: 2px solid #aaa;
+      background-color: white;
+      touch-action: none;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
